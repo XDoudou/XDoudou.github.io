@@ -1,0 +1,674 @@
+body,div,img,header,section,form,table,h2,p,ul,li,h4,h3,h6,a,video{
+    padding: 0;
+    margin: 0;
+}
+/* 公用样式 */
+.publick{
+    max-width: 1920px;
+    min-width:1200px;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+h2{
+    margin: 0 auto;
+}
+/* 活动介绍 马上报名 */
+#bm{
+    background: url(../img/bg_1.gif) no-repeat;
+    height: 498px;   
+}
+.page-all{
+    position: relative;
+}
+/* 空父级 实现自适应居中 */
+.fj{
+    margin: 0 auto;
+    width: 1000px;
+    padding-top: 30px;
+}
+.pub{
+    background: url(../img/bg-all.png) no-repeat;
+}
+.puba{
+    background: url(../img/BTN.png) no-repeat;
+}
+.lf-bm,.rh-test{
+    height: 50px;
+    width: 240px;
+}
+/* 左边样式 */
+.lf{
+    float: left;
+    width: 546px;
+}
+.lf-bm{
+    background-position: -115px -5px;
+    margin-bottom: 16px;
+}
+.lf p{
+    margin-bottom: 20px;
+    font: 18px "宋体";
+}
+.lf p,tr{
+    color: #ffffff;
+}
+#bm .lf table{
+    background-color: #1b3657;
+    opacity: 0.8;
+    border-collapse:collapse;
+    border: 0px; 
+}
+.lf tr,.lf th,.lf td{
+    border: 1px solid #203e65;
+    
+}
+.lf td{
+    font: 14px "宋体";
+    height: 74px;
+    padding-left: 16px;
+    padding-right: 20px;
+}
+.lf th{
+    font: 24px "Myriad Pro";
+    width: 90px;
+}
+#bm .lf .l-t{
+    border-top: 2px dashed #334b6a;
+}
+.lf .l-r{
+    border-right: 2px dashed #334b6a;
+}
+.lf .l-b{
+    border-bottom: 2px dashed #334b6a;
+}
+.lf .l-l{
+    border-left: 2px dashed #334b6a;
+}
+/* 右边样式 */
+.rh{
+    float: right;
+    width: 338px;
+}
+.rh .rh-test{
+    background-position: -476px -5px;
+    margin-bottom: 28px;
+}
+.rh input,select{
+    display: block;
+    outline: none;
+    border: none;
+    border: 1px solid #4e5b6e;
+    background-color: #0b203d;
+    margin-bottom: 10px;
+    padding-left: 55px;
+    color: #ffffff;
+    font: 14px "微软雅黑";
+    background-image: url(../img/bmm.png);
+}
+.rh input::-webkit-input-placeholder{
+    color: #ffffff;
+    opacity:1;
+}
+.rh input{
+    height: 44px;
+    width: 263px;
+}
+.rh select{
+    height: 46px;
+    width: 320px;
+}
+.rh select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.rh select::-ms-expand { display: none; }
+.rh .rh-form{
+    display: inline-block; 
+}
+.rh .rh-form-1{
+    margin-right: 10px;
+    width: 97px;
+}
+.rh .rh-submit{
+    background: url(../img/BTN.png) no-repeat;
+    height: 46px;
+    width: 320px;
+}
+/* 背景图位置 */
+.rh input:nth-of-type(2){
+    background-position-y: -56px;
+}
+.rh select:nth-of-type(1){
+    background-position-x: -168px;
+    width: 152px;
+}
+.rh select:nth-of-type(2){
+    background-position-y: -112px;
+}
+.rh select:nth-of-type(3){
+    background-position-y: -166px;
+}
+.rh select:nth-of-type(4){
+    background-position-y: -222px;
+}
+.rh select:nth-of-type(5){
+    background-position-y: -277px;
+}
+/* 转盘抽奖 */
+#lotto{
+    background: url(../img/bg_2.jpg) no-repeat;
+    height: 858px;
+    position: relative;
+}
+.lotto-fj{
+    padding-top: 74px;
+}
+.lotto-lf{
+    width: 486px;
+    color: #ffffff;
+}
+.lotto-fj h2{
+    width: 308px;
+    height: 50px;
+    background-position: -840px -5px;
+    margin-bottom: 10px;
+}
+.lotto-lf h3{
+    font: 28px "宋体";
+    margin-bottom: 16px;
+}
+.lotto-lf p{
+    font: 16px "微软雅黑";
+    margin-bottom: 28px;
+}
+.lotto-lf ul{
+    list-style: none;
+}
+/* 奖品列表 */
+.lotto-lf .lotto-lf-prize li::before{
+    content: "●";
+    color: #026bd7;
+    margin-right: 10px;
+}
+.lotto-lf .lotto-lf-prize li{
+    font: 14px "微软雅黑";
+    height: 21px;
+}
+ .lotto-lf-prize li .m-1{
+    margin-left: 35px;
+}
+.lotto-lf-prize li .m-2{
+    margin-left: 26px;
+}
+.lotto-lf-prize li .m-3{
+    margin-left: 17px;
+}
+.lotto-lf-list{
+    margin-top: 20px;
+    height: 206px;
+}
+.lotto-lf-list li{
+    float: left;
+    width: 156px;
+    height: 206px;
+    text-align: center;
+}
+.lotto-lf-list li:nth-of-type(1){
+    background-color: #0089e9;
+}
+.lotto-lf-list li:nth-of-type(2){
+    background-color: #0277d3;
+}
+.lotto-lf-list li:nth-of-type(3){
+    background-color: #026cda;
+}
+.lotto-lf-list li h4{
+    font-size: 30px;
+    margin-top: 18px;
+}
+.lotto-lf-list li h4 span{
+    font-size: 15px;
+}
+.lotto-lf-list li p{
+    font: 16px "黑体";
+    margin: 5px auto 0;
+    height: 20px;
+    border: 2px solid #33a1ed;
+}
+.lotto-lf-list .list-p{
+    width: 106px;    
+}
+.lotto-lf-list li .num{
+    font: 12px "黑体";
+}
+.lotto-lf-list li div{
+    width: 80px;
+    height: 76px;
+    margin: 16px auto 0;
+}
+.lotto-lf-list li:nth-of-type(1) div{
+    background-position: -6px -600px;
+}
+.lotto-lf-list li:nth-of-type(2) div{
+    background-position: -191px -600px;
+}
+.lotto-lf-list li:nth-of-type(3) div{
+    background-position: -361px -600px;
+}
+/* 互动游戏说明 */
+.lotto-lf-picture{
+    width: 534px;
+    /* position: relative;
+    z-index: 3; */
+}
+.lotto-lf-picture p{
+    width: 146px;
+    font: 24px "宋体";
+    margin-top: 48px;
+    margin-left: 15px;
+}
+.lotto-lf-picture span{
+    display: inline-block;
+    font: 13px "宋体";
+    text-align: center;
+}
+.lotto-lf-picture span:nth-of-type(1){
+    margin-left: 182px;
+    width: 68px;
+}
+.lotto-lf-picture span:nth-of-type(2){
+    margin-left: 40px;
+    width: 68px;
+}
+.lotto-lf-picture span:nth-of-type(3){
+    margin-left: 14px;
+    width: 145px;
+}
+.lotto-fj a{    
+    width: 234px;
+    height: 40px;
+    background-position-y: -90px;
+    margin-top: 30px;
+}
+.lotto-fj a:hover{
+    background-position-y: -130px;
+}
+.lotto-rh{
+    position: absolute;
+    width: 1002px;
+    height: 703px;
+    left: 342px;
+    top: 135px;
+    background-position: -538px -810px;
+}
+.lotto-rh img{
+    position: absolute;
+    left: 528px;
+    top:110px;
+    transform: rotate(-30deg);
+}
+/* 视频 */
+.video{
+    background: url(../img/bg_3.jpg) no-repeat;
+    height: 563px;
+    padding-top: 45px;
+    position: relative;
+}
+.video h2{
+    height: 52px;
+    width: 236px;
+    background-position: -1270px -5px;
+}
+.video video{
+    position: relative;
+    z-index: 3;
+    display: none;
+    background-color: #000000;
+}
+/* js控制class */
+.video .video-ifram{
+    display: block;
+}
+.video .video-rh{
+    width: 438px;
+    height: 190px;
+    position: absolute;
+    background-position: -1115px -540px;
+    left: 728px;
+    top: 368px;
+}
+.video .video-rh a{
+    position: absolute;
+    width: 274px;
+    height: 61px;   
+    left: 170px;
+}
+.lotto-fj a,.video .video-rh a,.edit .edit-details li a{
+    display: block;
+}
+.video-rh .video-a{
+    top:-236px;
+    background-position-y: -231px;
+}
+.video-rh .video-aa{
+    top:-151px;
+    background-position-y: -292px;
+}
+/* 编辑文章 */
+.edit{
+    background: url(../img/bg_4.jpg) no-repeat;
+    height: 1172px;
+    color: #ffffff;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.edit-edit{
+    position: relative;
+}
+.edit .edit-details,.edit-article{
+    list-style: none;
+    height: 426px;
+}
+.edit h2{
+    width: 244px;
+    height: 58px;
+}
+.edit .edit-essay{
+    background-position: -830px -70px;
+}
+.edit .edit-details li,.edit-article li{
+    width: 324px;
+    float: left;
+    height: 424px;
+}
+.edit .edit-details li{
+    background: url(../img/edit.png) no-repeat;
+    margin-top: 20px;
+}
+
+.edit-details li:nth-of-type(2){
+    background-position-y: -424px;
+    margin-left: 10px;
+}
+.edit-details li:nth-of-type(3){
+    background-position-y:  -848px;
+    margin-left: 10px;
+}
+.edit .edit-details li a{
+    width: 230px;
+    height: 36px;    
+    font: 18px "宋体";
+    line-height: 36px;    
+    margin: 336px auto 0;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+.edit .edit-article{
+    position: absolute;
+    top:50px; 
+}
+.edit-article li:hover{
+    opacity: 0;
+}
+.edit-article li{
+    background-color: #0658ab;
+    opacity: 0.8;
+}
+.edit-article li:nth-of-type(2),.edit-article li:nth-of-type(3){
+    margin-left: 10px;
+}
+.edit-article li div{
+    margin: 62px 23px 0px;
+}
+.edit-article li h6{
+    font: 18px "微软雅黑";
+}
+.edit-article li h3{
+    font: 26px "微软雅黑";
+}
+.edit-article li p{
+    font: 14px "微软雅黑";
+}
+.edit-article .article-line{
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+.edit-edit h2{
+    background-position: -470px -70px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.edit-edit a{
+    display: inline-block;
+    width: 318px;
+    height: 55px;
+    margin-right: 10px;
+}
+.edit-edit .edit-a{
+    background-position-y: -469px;
+}
+.edit-edit .edit-aa{
+    background-position-y: -524px;
+}
+.edit .tool-prev,.edit .tool-next,.elegant .elegant-prev,.elegant .elegant-next{
+    width: 69px !important;
+    background: url(../img/BTN.png);
+}
+.edit .tool-prev,.edit .tool-next{
+    height: 19px !important;
+    top: 372px;
+}
+.edit .tool-prev{
+    background-position-y: -634px;
+}
+.edit .tool-prev:hover{
+    background-position-y: -653px;
+}
+.edit .tool-next{
+    background-position-y: -672px;
+}
+.edit .tool-next:hover{
+    background-position-y: -691px;
+}
+/* ES300h 轮播图 */
+.edit-lightspot{
+    top:-3px;
+    width: 843px;
+    height: 390px;
+    left: -78px;
+}
+/* ES300h 字面介绍 */
+.edit-side{
+    color: #000000;
+    width: 332px;
+    height: 413px;
+    background-color: #ffffff;
+    top:-447px;
+    left: 335px;  
+}
+.edit-side h2,.edit-side p{
+    width: 250px;
+    margin: 0 auto;
+    font:15px "微软雅黑";
+}
+.edit-side h2{
+    margin-top: 66px;
+    margin-bottom: -20px;
+    font:22px "微软雅黑";
+}
+.swiper-slide p:nth-of-type(2){
+    margin-top: 20px;
+}
+.swiper-slide ul li{
+    margin: 5px auto 0;
+   width: 216px;
+   font:12px "微软雅黑";
+}
+.edit article{
+    display: none;
+}
+/* js 动态改变 */
+.edit .edit-rs{
+    display: block;
+}
+/* 精美车图 */
+.elegant{
+    position: relative;
+}
+.elegant h2{
+    height: 54px;
+    width: 236px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    margin-left: -118px;
+    top: 50px;
+    background-position: -110px -70px;
+}
+#elegant-fj{
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    top: 50%;
+}
+.elegant .elegant-prev,.elegant .elegant-next{
+    height: 69px !important;
+}
+.elegant .elegant-prev{
+    background-position-y: -710px;
+}
+.elegant .elegant-prev:hover{
+    background-position-y: -779px;
+}
+.elegant .elegant-next{
+    background-position-y: -848px;
+}
+.elegant .elegant-next:hover{
+    background-position-y: -917px;
+}
+/* 经销商信息 */
+.dealer{
+    background: url(../img/bg_6.jpg);
+    height: 800px;
+    padding-top: 62px;
+    color: #ffffff;
+}
+.dealer h2{
+    width: 264px;
+    height: 54px;
+    background: url(../img/bg-h2.png) no-repeat;
+    background-position-x: -108px;
+}
+#dealer-list{
+    width: 794px;
+    margin: 0 auto;
+}
+#dealer-list a{
+    display: inline-block;
+    width: 220px;
+    height: 37px;
+    margin-bottom: 36px;
+}
+#dealer-list .dealer-a{
+    background-position-y: -1023px;
+    margin-right: 60px;
+}
+#dealer-list .dealer-aa{
+    background-position-y: -1060px;
+    margin-right: 60px;
+}
+#dealer-list .dealer-aaa{
+    background-position-y: -1134px;
+}
+.dealer-fj div{
+    height: 215px;
+    overflow: auto;
+    display: none;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+.dealer-fj div::-webkit-scrollbar  
+{  
+    width: 16px;   
+    background-color: #102a4d;  
+}   
+/*定义滚动条轨道 内阴影+圆角*/  
+.dealer-fj div::-webkit-scrollbar-track  
+{  
+    background-color:rgba(16, 42, 77, 0) 
+}  
+/*定义滑块 内阴影+圆角*/  
+.dealer-fj div::-webkit-scrollbar-thumb  
+{     
+    background-color: #0089e9;  
+}
+/* js添加clas */
+.dealer-fj .dealer-div{
+    display: block;
+}
+.dealer table{
+    width: 100%;
+    text-align: left;
+    font: 14px "黑体";
+    border-collapse: collapse; 
+}
+.dealer tr{
+    height: 38px;
+    font-weight: bold;
+}
+.dealer th{
+    border-bottom: 1px solid #ffffff;
+}
+.dealer th:nth-of-type(1),.dealer td:nth-of-type(1){
+    text-indent: 13px;
+}
+.dealer td{
+    border-bottom: 1px solid #273d5a;
+}
+
+/* alter弹框 */
+.cover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+.cover p{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.cover .alter{
+    position: fixed;
+    width: 300px;
+    height: 150px;
+    top:50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.cover .alter button{
+    background: #fff;
+    color: #0089e9;
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border:1px solid #0089e9;
+}
+.cover .alter button:hover{
+    background: #0089e9;
+    color: #fff;
+}
