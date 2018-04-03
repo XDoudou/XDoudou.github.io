@@ -1,0 +1,573 @@
+body,div,footer,h1,h2,h3,h4,section,nav,img,p,ul,li,a,span,header,form,input,select,label{
+    margin: 0;
+    padding: 0;
+}
+a,input,button{
+    /*用户点击的之后会出现灰色遮罩层，设置这个灰色遮罩层的颜色为无色，透明度为0就可以*/
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    outline:none;	
+  }
+body{
+    /* 移动端每台设备的字体都不太一样，所有设备都会有一个字体，设置这个字体为默认字体 */
+    font-family:Helvetiva;
+  }
+body *{
+    /* 禁止用户修改字体大小 */
+    -webkit-text-size-adjust:100%;
+  }
+html{
+    font-size: 100px;  
+    height: 100%;
+    width: 100%;
+    overflow: hidden;  
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: #666666;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+.div1{
+    margin: 0 auto;
+    width: 6.4rem;
+    height: 100%;
+    position: relative;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+.pub{
+    background: url(../img/icon3.1.png) no-repeat;
+    background-size: .8rem;
+}
+/* 设置兼容滚动条 */
+#pag-all{
+    position: absolute;
+    top: .8rem;
+    bottom: 0;
+    width: 6.4rem;
+    /* left: 0;
+    right: 0; */
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: inherit;
+}
+/* 设置pc端滚动条宽度 */
+::-webkit-scrollbar{
+    width: 0;
+}
+header .head-back,.pag4-place i,.pag4 ul li i,.order i{
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+}
+header div,.bm-lunbo,nav ul,.video,footer,.pag2 ul,.pag3 ul,.pag4,.order{
+    font-size: 0;
+}
+/* 改变分页器颜色 */
+.pag-all .bm-lunbo .swiper-pagination-bullet-active{
+    background: red;
+}
+/* taitou */
+header{
+    z-index: 5;
+}
+header div,.order .order-d{
+    background-color: #084D8A;
+    height: .8rem;
+    position: relative;
+}
+.head-back,header h1,.order h1{
+    position: absolute; 
+    top: .2rem; 
+}
+.head-back{
+    left: .2rem;
+    background-position: -.1rem -1.59rem;
+}
+header h1,.order h1{
+    height: .4rem;
+    line-height: .4rem !important;
+    display:inline-block;
+    font: .3rem "微软雅黑";
+    color: #ffffff;
+    left: .6rem;
+}
+header a{
+    position: absolute;
+    right: 0.2rem;
+    margin-left: 5.44rem;
+    z-index: 20;
+}
+header img{
+    width: .76rem;
+}
+/* 导航 */
+nav{
+    position: sticky;
+    position:-webkit-sticky;
+    top: -.5rem;
+    z-index: 11; 
+}
+nav ul{ 
+    width: 100%;
+    background-color: #ffffff;
+}
+nav li{
+    padding-top: .1rem;
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+    height: 1.05rem;
+}
+nav li:nth-of-type(1) span{
+    background-position-x: -.4rem;
+}
+nav li:nth-of-type(2) span{
+    background-position-y:-.38rem;
+} 
+nav li:nth-of-type(3) span{
+    background-position-y:  -.78rem;
+} 
+nav li:nth-of-type(4) span{
+    background-position-y:  -1.2rem;
+}
+nav li span{
+    display: inline-block;  
+    margin: 0 auto;
+    width: .4rem;
+    height: .4rem;
+}
+nav li p{
+    text-align: center;
+    font: 0.24rem "pingFang SC bold";
+    height: .4rem;
+    line-height: .7rem;
+}
+nav .active{
+    border-bottom: .03rem solid #1c69d4;
+}
+nav .pp{
+    color: #1c69d4;
+}
+/* 宝马轮播  */
+.bm-lunbo{
+    width: 6.4rem;
+    /* margin-top: 2rem; */
+}
+.bm-lunbo .swiper-wrapper,.bm-lunbo .swiper-wrapper img{
+    width: 6.4rem;
+    height: 2.6rem;
+}
+
+/* 新闻资讯 */
+.new{
+    height: 3.33rem;
+    background-color: #ffffff;
+    font: 0;
+    padding: .22rem .2rem 0rem;
+    margin-top: .2rem;
+}
+.new .new-fj{
+    font: 0;
+}
+.new h2{
+    margin-bottom: .2rem;
+}
+.new a,.pag3 li a{
+    display: block;
+    height: 1.13rem;
+    width: 6rem;
+    position: absolute;
+} 
+.new-1,.new-2,.pag3 li .news-1{
+    display: inline-block;
+    height: 1.33rem;
+    width: 4rem;
+    vertical-align: top;
+}
+.new  h4,.pag3 li h4{
+    font: .26rem "pingFang SC bold";
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.new p,.pag3 li p{
+    font: .24rem "pingFang SC bold";
+    color: #999999;
+    height: .8rem;
+    line-height: 1.6;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.new img,.pag3 li img{
+    width: 1.55rem;
+    height: 1.13rem;
+}
+/* 宝马车系 */
+.car{
+    height: 4rem;
+    padding: .2rem .2rem 0;
+    background-color: #ffffff;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+.car div{
+    position: relative;
+}
+.car h2,.car p{
+    position: absolute;
+    z-index: 3;
+}
+/* h2  共同样式 */
+.car h2,.cont h2,.video h2,.new h2{
+    font: 0.38rem "pingFang SC bold";
+    line-height: .5rem;
+}
+.car p{
+   color: #d4d4d4;
+   font: .24rem "pingFang SC bold";
+   top: 3.4rem;
+   width: 6rem;
+   text-align: center;
+}
+.car p span{
+    color: #5187db;
+}
+.car p span,.car p em,.video .video-v a{
+    font: 0.26rem "pingFang SC bold";
+}
+.car p em,.video .video-v a{
+    color: #c1c1c1;
+}
+.car img{
+    width: 6rem;
+    height: 4rem;
+    position: absolute;
+}
+/* 推荐内容 */
+.cont{
+    height: 5rem;
+    padding: .2rem .2rem 0;
+    background-color: #ffffff;
+}
+.cont h2{
+    margin-bottom: .2rem;
+}
+.cont .swiper-container,.cont .swiper-container img{
+    width: 6rem;
+    height: 3.82rem;
+}
+/* 轮播图上下按钮 */
+.video .swiper-container .video-k,.swiper-container .prev-l,.swiper-container .prev-r{
+    background: url(../img/videoicon.png) no-repeat;
+    background-size: 1rem;
+}
+.swiper-container .prev-l,.swiper-container .prev-r{
+    width: .61rem;
+    height: .61rem;
+}
+.swiper-container .prev-r{
+    background-position-y: -.61rem;
+    
+}
+/* 精彩视频 */
+.video{
+    height: 4.28rem;
+    padding: .2rem .2rem 0;
+    background-color: #ffffff;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.video-v{
+    position: absolute;
+    right: .2rem;
+    top: .25rem;
+}
+.video-v a{
+    display: inline-block;
+    position: absolute;
+    width: .6rem;
+    right: .35rem;
+    height: .33rem;
+    text-decoration: none;
+}
+.video .video-v i{
+    display: inline-block;
+    width: .3rem;
+    height: .33rem;
+    background-position: -.5rem -1.64rem;
+}
+.video .swiper-container{
+    margin-top: .2rem;
+}
+.video .swiper-container,.video .swiper-wrapper,.video .swiper-wrapper img{
+    width: 6rem;
+    height: 3rem;
+}
+.video .swiper-container p{
+    font: .24rem "pingFang SC bold";
+    height: 0.4rem;
+    width: 6rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: .4rem;
+    background-color: #212121;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    opacity: .8;
+}
+.video .swiper-container .video-k{
+    display: block;
+    width: 1.02rem;
+    height: 1.02rem;
+    position: absolute;
+    background-position-y: -1.27rem;
+    z-index: 5;
+    left: 50%;
+    margin-left: -.61rem;
+    top: 50%;
+    margin-top: -.61rem;
+}
+/* dibu */
+footer{
+    height: 1rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+}
+footer img{
+    width: 6.4rem;
+    height: 1rem;
+}
+footer span{
+    display: inline-block;
+    height: 1rem;
+    position: absolute;
+}
+footer span:nth-of-type(1),footer span:nth-of-type(2){
+    width: 1.4rem;
+}
+footer span:nth-of-type(1){
+    left: 0;
+}
+footer span:nth-of-type(2){
+    left: 1.4rem;
+}
+footer span:nth-of-type(3){
+    width: 3.6rem;
+    left: 2.8rem;
+}
+/* pag2 */
+.pag2 ul{
+    margin: .2rem .2rem 0 .1rem;
+}
+.pag2 ul li a{
+    display: inline-block;
+}
+.pag2 ul li,.pag2 ul li img,.pag2 ul li a{
+    width: 2.95rem;
+    height: 1.53rem;
+}
+.pag2 ul li{
+    display: inline-block;
+    margin-left: .1rem;
+    margin-bottom: .1rem;
+}
+/* pag3 */
+.pag3 ul{
+    margin: .2rem .2rem .2rem .1rem;
+}
+.pag3 ul li{
+    margin-left: .1rem;
+}
+.pag3 .news-1{
+    margin-left: .25rem;
+}
+.pag3 div:nth-child(2){
+    background-color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    width: 6rem;
+    cursor: pointer;
+    margin: 0 .2rem 1rem;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+/* pag4 */
+.pag4 .pag4-place{
+    width: 5.6rem;
+    height: .8rem;
+    padding: 0 .2rem;
+    font: .3rem "pingFang SC bold";
+    line-height: .8rem;
+    margin: .2rem auto 0;
+    background-color: #ffffff;
+}
+.pag4-place span{
+    color: #999999;
+}
+.pag4-place strong{
+    color: #333333;
+}
+.pag4-place i{
+    margin-left: 2.6rem;
+    background-position: -.3rem -1.58rem;
+    vertical-align: middle;
+}
+.pag4 ul li i{
+    margin-left: .52rem;
+    background-position-y:-2rem;
+    vertical-align: top;
+    margin-top: .2rem;
+}
+.pag4 ul{
+    margin: .2rem auto;
+    width: 6rem;
+}
+.pag4 ul li{
+    width: 6rem;
+    min-height: 2.52rem;
+    margin-bottom: .2rem;
+    background-color: #ffffff;
+}
+.pag4 ul li h3{
+    font: .36rem "pingFang SC bold";
+    color: #333333;
+    line-height: .77rem;
+}
+.pag4 ul li p{
+    font: .24rem "pingFang SC bold";
+    color: #ababab;
+    line-height: .4rem;
+}
+.pag4 ul li a{
+    display: inline-block;
+    height: .63rem;
+    width: 4.29rem;
+    border-right: 1px solid #ababab;
+    margin-top: .09rem;
+    font: .32rem "pingFang SC bold";
+    color: #246bd3;
+    line-height: .63rem;
+    text-decoration: none;
+}
+.pag4 ul li div{
+    padding: 0 .2rem;
+}
+.pag4 ul li div:nth-child(1){
+    min-height: 1.7rem;
+    border-bottom: 1px solid #ababab;
+}
+.pag4 ul li div:nth-child(2){
+    height: .81rem;
+}
+/* 预约报名 */
+.order{
+    position: absolute;
+    top: 0;
+    z-index: 15;
+    width: 6.4rem;
+    overflow: hidden;
+    height: 100%;
+    background-color: #ffffff;
+    display: none;
+}
+.order .order-ord{
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+}
+.order form{
+    padding: .42rem 0 1rem .2rem;
+    font: 0.24rem "pingFang SC bold";
+    color: #333333;
+}
+.order form input{
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+.order form select{
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-color: #999;
+}
+.order .form-yuyue label{
+    margin-right: .11rem;
+}
+.order .form-yuyue input{
+    height: .78rem;
+}
+.order .form-yuyue .yuyue-3{
+    border: 1px solid;
+    width: 4.81rem;
+}
+.order .form-yuyue input,.order .form-yuyue select{
+    font: 0.2rem "pingFang SC bold";
+    color: #9d9d9d;
+    text-indent: .2rem;
+}
+.order .form-yuyue{
+    margin-bottom: .2rem;
+}
+.order .form-yuyue select{
+    width: 4.85rem;
+    height: .8rem;
+}
+.order .form-yuyue .form-pt{
+    border: 1px solid;
+    width: 1.68rem;
+}
+.order form .form-t{
+    width: 1.72rem;
+}
+.order form .yuyue-1{
+    display: inline-block;
+}
+.order .yuyue-2{
+    margin-left: .3rem;
+}
+.order form .yuyue-city{
+    margin-right: .25rem;
+}
+.order form p{
+    font: 0.2rem "pingFang SC bold";
+    margin-bottom: .1rem;
+    margin-left: 1.15rem;
+    color: #9d9d9d;
+}
+.order form p a{
+    color: #246bd3;
+}
+.order form .yuyue-now{
+    height: 1rem;
+    width: 6rem;
+    background-color: #1c69d4;
+    color: #ffffff;
+    font: 0.36rem "pingFang SC bold";
+    line-height: 1rem;
+    margin-top: .42rem;
+}
+/* 蒙层 */
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 14;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (clientWidth < 320) {
+                        docEl.style.fontSize = 50 + 'px';
+                    } else if (clientWidth > 640) {
+                        docEl.style.fontSize = 100 + 'px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="div1">
+        <header>
+            <div>
+                <i class="pub head-back"></i>
+                <h1>宝马品牌专题</h1>
+                <a href="#">
+                    <img src="./img/bmw-logo.png" alt="">
+                </a>
+            </div>
+        </header>
+        <!-- 内容区域  -->
+        <div id="pag-all" class="scroll">
+            <!-- 导航 -->
+            <nav>
+                    <ul id="nav-ul">
+                        <li class="active">
+                            <span class="pub"></span>
+                            <p class="pp">首页</p>
+                        </li>
+                        <li>
+                            <span class="pub"></span>
+                            <p>选车</p>
+                        </li>
+                        <li>
+                            <span class="pub"></span>
+                            <p>新闻</p>
+                        </li>
+                        <li>
+                            <span class="pub"></span>
+                            <p>经销商</p>
+                        </li>
+                    </ul>
+                </nav>
+            <div class="swiper-container pag-all">
+                <div class="swiper-wrapper">
+                    <!-- pag1 -->
+                    <div class="pag1 swiper-slide">
+                        <!-- 宝马轮播 -->
+                        <section>
+                            <div class="swiper-container bm-lunbo">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/bm-1.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/bm-2.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/bm-3.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/bm-4.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/bm-5.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/bm-6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- 如果需要分页器 -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </section>
+                        <!-- 新闻资讯 -->
+                        <section class="new">
+                            <h2>新闻资讯</h2>
+                            <div class="new-fj">
+                                <a href="#"></a>
+                                <img src="./img/new-1.jpg" alt="">
+                                <div class="new-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                                <a href="#"></a>
+                                <img src="./img/new-2.jpg" alt="">
+                                <div class="new-2">
+                                    <h4>清华学子竟然这样评价全新BMW5系！（上篇）</h4>
+                                    <p>这可能是东半球最专业的一次KOL评车了！面对火热的全新BMW 5系，我们请来给它做“身体检查”的专业车辆工程师们的学历和从业经历绝对亮瞎你的双眼。</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- 宝马车系 -->
+                        <section class="car">
+                            <a href="#"></a>
+                            <div>
+                                <h2>宝马车系</h2>
+                                <img src="./img/car.jpg" alt="">
+                                <p>
+                                    <span>5系</span>&nbsp;|&nbsp;厂商指导价&nbsp;
+                                    <em>28.5-43.9万</em>
+                                </p>
+                            </div>
+                        </section>
+                        <!-- 推荐内容 -->
+                        <section class="cont">
+                            <h2>内容推荐</h2>
+                            <div class="swiper-container cont-bmcar">
+                                <div class="swiper-wrapper">
+                                    <a href="" class="swiper-slide">
+                                        <img src="./img/cont-1.jpg" alt="">
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <img src="./img/cont-2.jpg" alt="">
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <img src="./img/cont-3.jpg" alt="">
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <img src="./img/cont-4.jpg" alt="">
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <img src="./img/cont-5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-button-prev prev-l"></div>
+                                <div class="swiper-button-next prev-r"></div>
+                            </div>
+                        </section>
+                        <!-- 精彩视频 -->
+                        <section class="video">
+                            <h2>精彩视频</h2>
+                            <div class="video-v">
+                                <a href="#">更多</a>
+                                <i class="pub"></i>
+                            </div>
+                            <div class="swiper-container video-bmcar">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/v-1.jpg" alt="">
+                                        <p>全新宝马一系运动轿车&nbsp;售价20.48万元起</p>
+                                        <i class="video-k"></i>
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/v-2.jpg" alt="">
+                                        <p>全新一代宝马五系豪华轿车&nbsp;即将现身</p>
+                                        <i class="video-k"></i>
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img src="./img/v-3.jpg" alt="">
+                                        <p>2017款宝马M760i&nbsp;xDrive&nbsp;瞄准奥迪S8</p>
+                                        <i class="video-k"></i>
+                                    </a>
+                                </div>
+                                <div class="swiper-button-prev prev-l"></div>
+                                <div class="swiper-button-next prev-r"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- pag2 -->
+                    <div class="pag2 swiper-slide">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/bmwall.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/x1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/x2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/x3.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/x4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/x5.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/x6.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/x7.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/xi.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/xm.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/xx.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/xz4.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- pag3 -->
+                    <div class="pag3 swiper-slide">
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-1.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-2.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-3.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-4.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-5.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-6.png" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-7.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-8.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-9.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="./img/news-10.jpg" alt="">
+                                <div class="news-1">
+                                    <h4>易车副总编辑刘建东：钟情于宝马，偏爱于4系</h4>
+                                    <p>8月中旬某一天的下午2点钟，“秋老虎”的烈日仍然毒辣。我坐在一辆宝马440i四门版的副驾驶席上，要不是车本身和开车的人都充满激情，我都快被透过玻璃的阳光晃得昏昏欲睡。我不时侧头看一下正在认真体验这款宝马440i四门版的刘总编，正琢磨着是找个话题聊一聊还是尽量不去打扰他的体验过程，这时刘总编先说话了：“这款4系开起来还真是与众不同啊……</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div>加载更多</div>
+                    </div>
+                    <!-- pag4 -->
+                    <div class="pag4 swiper-slide">
+                        <div class="pag4-place">
+                            <span>所在地区：</span>
+                            <strong>北京市</strong>
+                            <i class="pub"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <div>
+                                    <h3>4S店-北京盈之宝</h3>
+                                    <p>宝马X5 插电混动购车送10000元大礼包</p>
+                                    <p>北京市朝阳区利泽东二路2号</p>
+                                </div>
+                                <div>
+                                    <a href='tel:400-815-0506'>400-815-0506</a>
+                                    <i class="pub"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>4S店-北京京宝行</h3>
+                                    <p>北京京宝行宝马3系购车送大礼包</p>
+                                    <p>北京市海淀区闵庄路19号</p>
+                                </div>
+                                <div>
+                                    <a href='tel:400-817-9096'>400-817-9096</a>
+                                    <i class="pub"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>4S店-北京宝泽行</h3>
+                                    <p>宝马X1 插电混动享受补贴送大礼包</p>
+                                    <p>北京市丰台区西三环南路59号</p>
+                                </div>
+                                <div>
+                                    <a href='tel:400-815-1576'>400-815-1576</a>
+                                    <i class="pub"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>4S店-北京宝诚百旺</h3>
+                                    <p>BMW 5系插电混动购车送18880元大礼包</p>
+                                    <p>北京市海淀区西北旺百旺绿谷汽车园</p>
+                                </div>
+                                <div>
+                                    <a href='tel:400-817-5765'>400-817-5765</a>
+                                    <i class="pub"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>4S店-北京京顺宝</h3>
+                                    <p>北京京顺宝宝马7系购车送大礼包</p>
+                                    <p>北京市石景山区莲石东路黄庄村43号（远洋山水东侧）</p>
+                                </div>
+                                <div>
+                                    <a href='tel:400-815-1711'>400-815-1711</a>
+                                    <i class="pub"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>4S店-北京华德宝</h3>
+                                    <p>北京华德宝宝马X5购车享专属礼包</p>
+                                    <p>北京市朝阳区建国路52号（东长安街四惠桥东京通快速辅路1000米路南）</p>
+                                </div>
+                                <div>
+                                    <a href='tel:400-810-2541'>400-810-2541</a>
+                                    <i class="pub"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="./img/home-footer.jpg" alt="">
+            <span href="#"></span>
+            <span href="#"></span>
+            <span href="#"></span>
+        </footer>
+        <!-- 预约报名 -->
+        <div class="order scroll" id="order">
+            <div class="order-ord">
+                <div class="order-d">
+                    <i class="pub head-back"></i>
+                    <h1>预约试驾</h1>
+                </div>
+                <form>
+                    <div class="form-yuyue">
+                        <div class="yuyue-1">
+                            <label for="">姓&emsp;&emsp;名</label>
+                            <input type="text" class="form-pt">
+                        </div>
+                        <div class="yuyue-1 yuyue-2">
+                            <label for="" class="yuyue-city">称&emsp;谓</label>
+                            <select name="" id="" class="form-t">
+                                <option value="请选择">请选择</option>
+                                <option value="先生">先生</option>
+                                <option value="女士">女士</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-yuyue">
+                        <label for="">手&emsp;&emsp;机</label>
+                        <input type="text" class="yuyue-3">
+                    </div>
+                    <div class="form-yuyue">
+                        <div class="yuyue-1">
+                            <label for="">省&emsp;&emsp;份</label>
+                            <select name="" id="" class="form-t">
+                                <option value="省份">省份</option>
+                            </select>
+                        </div>
+                        <div class="yuyue-1 yuyue-2">
+                            <label for="" class="yuyue-city">城&emsp;市</label>
+                            <select name="" id="" class="form-t">
+                                <option value="城市">城市</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-yuyue">
+                        <label for="">经&ensp;销&ensp;商</label>
+                        <select name="" id="">
+                            <option value="请选择">请选择</option>
+                        </select>
+                    </div>
+                    <div class="form-yuyue">
+                        <label for="">购车时间</label>
+                        <select name="" id="">
+                            <option value="请选择">请选择</option>
+                        </select>
+                    </div>
+                    <div class="form-yuyue">
+                        <label for="">意向车型</label>
+                        <select name="" id="">
+                            <option value="请选择">请选择</option>
+                        </select>
+                    </div>
+                    <p>
+                        <input type="checkbox" name="vehicle" value="Bike" checked="checked" /> 我已阅读并接受个人信息保护
+                        <a>《法律声明》</a>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="vehicle" value="Car" checked="checked" /> 我已阅读并同意
+                        <a>《隐私政策》</a>里的各项内容</p>
+                    <input type="submit" value="立即预约" class="yuyue-now" />
+                </form>
+            </div>
+        </div>
+        <!-- 蒙层 -->
+        <div class="cover" id="cover">    
+        </div>
+    </div>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <Script src="js/Style.js"></Script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
